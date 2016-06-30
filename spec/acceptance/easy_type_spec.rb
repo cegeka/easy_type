@@ -6,8 +6,7 @@ describe 'easy_type' do
     it 'should work with no errors' do
       pp = <<-EOS
 
-        require 'easy_type/file_includer'
-        require 'easy_type/mungers'
+        require 'easy_type'
 
         $test = unsafe_munge('100M')
         puts "TEST input was 100M, test output is $test"
