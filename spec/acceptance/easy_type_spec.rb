@@ -7,7 +7,7 @@ describe 'easy_type' do
       pp = <<-EOS
 
         require 'easy_type'
-        include EasyType::Mungers
+        include EasyType
 
         $test = unsafe_munge('100M')
         puts "TEST input was 100M, test output is $test"
